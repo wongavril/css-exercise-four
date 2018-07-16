@@ -7,42 +7,34 @@ body {
   font-size: 10px;
 }
 
-.heading {
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 20px;
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container > h1 {
+  margin: 30px 0;
+  font-family: sans-serif;
+  font-size: 1.4em;
+  letter-spacing: .2em;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .preview {
-  width: 375px;
+  width: 100%;
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: left;
   margin-bottom: 10px;
   padding: 20px;
+}
+
+.preview h1{
   font-size: 22px;
   font-weight: 600;
-}
-
-@media screen and (min-width: 575px) {
-  .preview {
-    margin: 10px;
-    display: inline-block;
-    width: 360px;
-  }
-}
-
-@media screen and (min-width: 991px) {
-  .images {
-    text-align: center;
-  }
-  .preview {
-    text-align: left;
-    width: 300px;
-  }
+  text-align: left;
 }
 
 .baku {
@@ -59,4 +51,32 @@ body {
 
 .rome {
   background-image: url("../images/rome.jpg");
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .preview {
+    float: left;
+    height:200px;
+    margin: 1% 1%;
+    width: 48%;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    width: 70%;
+  }
+
+  .preview {
+    background-size: cover;
+    float: left;
+    height: 200px;
+    margin: 2em 1%;
+    width: 23%;
+  }
 }
